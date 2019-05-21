@@ -8,24 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		021E381B229498260045D1CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E381A229498260045D1CA /* AppDelegate.m */; };
-		021E381E229498260045D1CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E381D229498260045D1CA /* ViewController.m */; };
 		021E3821229498260045D1CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021E381F229498260045D1CA /* Main.storyboard */; };
 		021E3823229498270045D1CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021E3822229498270045D1CA /* Assets.xcassets */; };
 		021E3826229498270045D1CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021E3824229498270045D1CA /* LaunchScreen.storyboard */; };
 		021E3829229498270045D1CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E3828229498270045D1CA /* main.m */; };
+		021E3832229499DD0045D1CA /* SRHCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E3831229499DD0045D1CA /* SRHCard.m */; };
+		021E383622949C890045D1CA /* SRHCardController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021E383522949C890045D1CA /* SRHCardController.m */; };
+		021E383D2294A00D0045D1CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E383C2294A00D0045D1CA /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		021E3816229498260045D1CA /* DeckOfCardsC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfCardsC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		021E3819229498260045D1CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		021E381A229498260045D1CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		021E381C229498260045D1CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		021E381D229498260045D1CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		021E3820229498260045D1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		021E3822229498270045D1CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021E3825229498270045D1CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021E3827229498270045D1CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		021E3828229498270045D1CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		021E3830229499DD0045D1CA /* SRHCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHCard.h; sourceTree = "<group>"; };
+		021E3831229499DD0045D1CA /* SRHCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHCard.m; sourceTree = "<group>"; };
+		021E383422949C890045D1CA /* SRHCardController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRHCardController.h; sourceTree = "<group>"; };
+		021E383522949C890045D1CA /* SRHCardController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SRHCardController.m; sourceTree = "<group>"; };
+		021E383B2294A00D0045D1CA /* DeckOfCardsC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeckOfCardsC-Bridging-Header.h"; sourceTree = "<group>"; };
+		021E383C2294A00D0045D1CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +64,45 @@
 		021E3818229498260045D1CA /* DeckOfCardsC */ = {
 			isa = PBXGroup;
 			children = (
+				021E382F229498A30045D1CA /* Resources */,
+				021E381F229498260045D1CA /* Main.storyboard */,
+				021E383C2294A00D0045D1CA /* ViewController.swift */,
+				021E383B2294A00D0045D1CA /* DeckOfCardsC-Bridging-Header.h */,
+				021E383722949C960045D1CA /* ModelControllers */,
+				021E383322949C740045D1CA /* Models */,
+			);
+			path = DeckOfCardsC;
+			sourceTree = "<group>";
+		};
+		021E382F229498A30045D1CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				021E3819229498260045D1CA /* AppDelegate.h */,
 				021E381A229498260045D1CA /* AppDelegate.m */,
-				021E381C229498260045D1CA /* ViewController.h */,
-				021E381D229498260045D1CA /* ViewController.m */,
-				021E381F229498260045D1CA /* Main.storyboard */,
 				021E3822229498270045D1CA /* Assets.xcassets */,
 				021E3824229498270045D1CA /* LaunchScreen.storyboard */,
 				021E3827229498270045D1CA /* Info.plist */,
 				021E3828229498270045D1CA /* main.m */,
 			);
-			path = DeckOfCardsC;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		021E383322949C740045D1CA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				021E3830229499DD0045D1CA /* SRHCard.h */,
+				021E3831229499DD0045D1CA /* SRHCard.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		021E383722949C960045D1CA /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				021E383422949C890045D1CA /* SRHCardController.h */,
+				021E383522949C890045D1CA /* SRHCardController.m */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +136,7 @@
 				TargetAttributes = {
 					021E3815229498260045D1CA = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -141,7 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021E381E229498260045D1CA /* ViewController.m in Sources */,
+				021E383D2294A00D0045D1CA /* ViewController.swift in Sources */,
+				021E3832229499DD0045D1CA /* SRHCard.m in Sources */,
+				021E383622949C890045D1CA /* SRHCardController.m in Sources */,
 				021E3829229498270045D1CA /* main.m in Sources */,
 				021E381B229498260045D1CA /* AppDelegate.m in Sources */,
 			);
@@ -285,14 +322,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfCardsC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCardsC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.srussellh.DeckOfCardsC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfCardsC/DeckOfCardsC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,14 +342,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = DeckOfCardsC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/DeckOfCardsC/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.srussellh.DeckOfCardsC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeckOfCardsC/DeckOfCardsC-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
